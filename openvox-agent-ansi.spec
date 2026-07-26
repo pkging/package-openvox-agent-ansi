@@ -9,10 +9,11 @@ Group:     Development/Languages
 License:   BSD-2
 URL:       https://github.com/rubyworks/ansi
 Source0:   https://rubygems.org/gems/%{gem_name}-%{version}.gem
-Requires:  openvox-agent >= 7
+Requires:  openvox-agent >= 8
 Requires:  openvox-agent < 9
 Requires:  /opt/puppetlabs/puppet/bin/gem
 BuildArch: noarch
+Obsoletes: puppet-agent-ansi
 
 %description
 The ANSI project is a collection of ANSI escape code related libraries
@@ -48,7 +49,7 @@ fi
 
 %changelog
 * Sun Jul 26 2026 Lennart Betz <lbetz@prefork.de> - 1.6.0-1
-- Update to v1.6.0, rename package, remove requirement of puppet-agent
+- Update to v1.6.0, rename package, remove requirement of puppet-agent, remove OpenVox 7 support
 * Fri May 09 2025 Thomas Widhalm <thomas.widhalm@netways.de> - 1.5.0-2
 - Add OpenVox as alternative to Puppet Agent
 * Fri Aug 30 2024 Lennart Betz <lennart.betz@netways.de> - 1.5.0-1
