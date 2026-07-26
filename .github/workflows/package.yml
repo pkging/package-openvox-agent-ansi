@@ -1,10 +1,11 @@
-name: Build packages
+name: Build package-openvox-agent-ansi
 
 on:
   push:
     branches: [ '**' ]
     tags:
       - '*'
+  workflow_dispatch:
 
 jobs:
   build:
