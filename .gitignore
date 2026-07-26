@@ -18,6 +18,7 @@ debian/debhelper-build-stamp
 debian/files
 debian/*.substvars
 debian/tmp/
+upstream/
 
 # Package staging directories generated during build
 debian/openvox-agent-ansi/
