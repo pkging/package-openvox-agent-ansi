@@ -14,4 +14,5 @@ jobs:
       runner_labels: '["self-hosted","pkging"]'
       matrix: |
         el9: x86_64
+        debian12: x86_64
     secrets: inherit

@@ -1,0 +1,26 @@
+Source: openvox-agent-ansi
+Section: admin
+Priority: optional
+Maintainer: Lennart Betz <lbetz@prefork.de>
+Build-Depends: debhelper (>= 11)
+Standards-Version: 4.1.3
+Homepage: https://github.com/rubyworks/ansi
+
+Package: openvox-agent-ansi
+Architecture: all
+Depends: ${misc:Depends},
+         openvox-agent (>= 8.0.0), openvox-agent (<< 9.0.0)
+Provides: puppet-agent-ansi
+Replaces: puppet-agent-ansi (<< 1.6.0-1)
+Breaks: puppet-agent-ansi (<< 1.6.0-1)
+Description: The ANSI project is a collection of ANSI escape code related
+ libraries enabling ANSI code based colorization and stylization of output.
+ It is very nice for beautifying shell output.
+
+Package: puppet-agent-ansi
+Architecture: all
+Section: oldlibs
+Priority: optional
+Depends: ${misc:Depends}, openvox-agent-ansi (= ${binary:Version})
+Description: transitional package for openvox-agent-ansi
+ This package can be safely removed after the upgrade.

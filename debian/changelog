@@ -1,0 +1,12 @@
+openvox-agent-ansi (1.6.0-1) stable; urgency=low
+
+  * Release 1.6.0
+  * Rename package from puppet-agent-ansi to openvox-agent-ansi
+
+ -- Lennart Betz <lbetz@prefork.de>  Sun, 26 Jul 2026 17:40:56 +0100
+
+puppet-agent-ansi (1.5.0-1) stable; urgency=low
+
+  * Release 1.5.0
+
+ -- Lennart Betz <lennart.betz@netways.de>  Sat, 31 Aug 2024 14:26:19 +0200
