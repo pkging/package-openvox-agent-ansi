@@ -1,0 +1,17 @@
+name: Build packages
+
+on:
+  push:
+    branches: [ '**' ]
+    tags:
+      - '*'
+
+jobs:
+  build:
+    uses: pkging/ci-workflows/.github/workflows/package.yml@main
+    with:
+      ci_workflows_ref: "main"
+      runner_labels: '["self-hosted","pkging"]'
+      matrix: |
+        el9: x86_64
+    secrets: inherit
