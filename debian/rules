@@ -14,7 +14,7 @@
 GEM_NAME := ansi
 UPSTREAM_VERSION := $(shell dpkg-parsechangelog -SVersion | sed 's/-[^-]*$$//')
 GEM_FILE := $(GEM_NAME)-$(UPSTREAM_VERSION).gem
-ALT_GEM_FILE := openvox-agent-ansi-$(UPSTREAM_VERSION).gem
+ALT_GEM_FILE := openvox-agent-${GEM_NAME}-$(UPSTREAM_VERSION).gem
 GEM_CACHE_DIR := /opt/puppetlabs/puppet/share/gems
 
 %:
